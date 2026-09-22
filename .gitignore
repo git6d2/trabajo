@@ -1,0 +1,8 @@
+# Ignorar todos los CSV
+*.csv
+
+# Ignorar logs
+*.log
+
+# Ignorar temporales
+*.tmp
