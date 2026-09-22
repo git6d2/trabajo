@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-Remueve todas las licencias de usuarios bloqueados en Microsoft 365.
+Remueve todas las licencias de usuarios bloqueados en Microsoft 365 a partir de un archivo CSV.
 
 .DESCRIPTION
 Lee un archivo CSV con una lista de usuarios y realiza las siguientes acciones:
@@ -23,17 +23,16 @@ Lee un archivo CSV con una lista de usuarios y realiza las siguientes acciones:
 .EXAMPLE
 Simulación:
 
-.\Remove-Licenses-BlockedUsers.ps1 `
-    -CsvPath "C:\Temp\Usuarios.csv" `
+.\Remove-Licenses-BlockedUsers.ps1 -CsvPath "C:\Users\wilson.rojas\Scripts\UsuariosDesvinculacion.csv"
     -WhatIf
 
 .EXAMPLE
 Ejecución real:
 
-.\Remove-Licenses-BlockedUsers.ps1 `
-    -CsvPath "C:\Temp\Usuarios.csv"
+.\Remove-Licenses-BlockedUsers.ps1 -CsvPath "C:\Users\wilson.rojas\Scripts\UsuariosDesvinculacion.csv"
 
 .NOTES
+UsuariosDesvinculacion.csv debe concervar el mismo formato y mismo nombre.
 Autor: Microsoft 365 / PowerShell Automation
 #>
 
